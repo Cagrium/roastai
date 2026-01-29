@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ROKET ANİMASYONU */
+@keyframes roket-uc {
+  0% { transform: translate(0, 0) rotate(-45deg); }
+  50% { transform: translate(15px, -25px) rotate(-40deg); }
+  100% { transform: translate(0, 0) rotate(-45deg); }
+}
+.roket-hareket {
+  animation: roket-uc 3s ease-in-out infinite;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+}
